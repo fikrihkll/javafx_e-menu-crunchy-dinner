@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane fx:id="anchor_struct_item" prefHeight="39.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="1.0" layoutY="17.0" prefHeight="17.0" prefWidth="502.0" text="____________________________________________________________________________________________________" />
+      <HBox alignment="TOP_RIGHT" layoutX="257.0" layoutY="-3.0" prefHeight="24.0" prefWidth="243.0">
+         <children>
+            <Label fx:id="tv_qty_struct" text="50">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="tv_price" text="Rp.50.000" />
+         </children>
+      </HBox>
+      <HBox prefHeight="17.0" prefWidth="276.0">
+         <children>
+            <Label fx:id="tv_name" prefHeight="17.0" prefWidth="260.0" text="Crunchy Burger" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

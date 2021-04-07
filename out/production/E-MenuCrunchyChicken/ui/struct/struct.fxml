@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_struct" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="1280.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: #172449;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="65.0" prefWidth="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="tv_new_order" text="Make New Order" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fx:id="btn_new_order" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/back_home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="16.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/purchase_gradient.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="16.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Purchase" textFill="#feaa66">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="655.0" prefWidth="1280.0">
+                     <children>
+                        <ImageView fitHeight="627.0" fitWidth="606.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/success.png" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="623.0" prefWidth="555.0" styleClass="rounded">
+                           <HBox.margin>
+                              <Insets bottom="16.0" top="16.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label layoutX="15.0" layoutY="154.0" text="Item(s) you ordered">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label fx:id="tv_id" layoutX="471.0" layoutY="123.0" prefHeight="17.0" prefWidth="82.0" text="ID 230230230" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" AnchorPane.rightAnchor="0.0" />
+                              <Label fx:id="tv_date" layoutX="14.0" layoutY="118.0" prefHeight="27.0" prefWidth="142.0" text="6 October 2021" />
+                              <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="178.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/CrunchyDinner.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="14.0" layoutY="14.0" text="Invoice">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="99.0" fitWidth="200.0" layoutX="198.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/thankyou.png" />
+                                 </image>
+                              </ImageView>
+                              <ScrollPane fx:id="scroll_struct" layoutX="15.0" layoutY="175.0" prefHeight="339.0" prefWidth="528.0">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="336.0" prefWidth="525.0">
+                                       <children>
+                                          <ListView fx:id="list_item_struct" prefHeight="335.0" prefWidth="524.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                              <Label layoutX="15.0" layoutY="521.0" text="Total" textFill="#feaa66">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="tv_total_struct" contentDisplay="RIGHT" layoutX="436.0" layoutY="521.0" prefHeight="20.0" prefWidth="107.0" text="Rp.80.000" textAlignment="RIGHT" textFill="#feaa66" wrapText="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="item_pane" prefHeight="300.0" prefWidth="240.0" styleClass="rounded" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="304.0" prefWidth="240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="iv" cache="true" cacheHint="QUALITY" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" smooth="false" />
+            <Label fx:id="tv_name" prefHeight="17.0" prefWidth="225.0" text="Cheese Burger" textFill="#505050">
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="4.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="tv_price" prefHeight="17.0" prefWidth="226.0" text="Rp.18.000" textFill="#505050">
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="2.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="123.0">
+                     <children>
+                        <JFXButton fx:id="btn_dec" styleClass="dot" text="-" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="11.0" right="11.0" top="5.0" />
+                           </padding>
+                        </JFXButton>
+                        <Label fx:id="tv_qty" prefHeight="20.0" prefWidth="22.0" text="12" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXButton fx:id="btn_inc" prefHeight="23.0" prefWidth="16.0" styleClass="dot" text="+" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btn_add_cart" layoutX="173.0" layoutY="21.0" styleClass="button-orange" stylesheets="@../style.css" text="Add To Cart" textFill="WHITE" AnchorPane.rightAnchor="8.0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/baseline_add_shopping_cart_white_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

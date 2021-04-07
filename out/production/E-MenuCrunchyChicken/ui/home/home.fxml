@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.home.HomeController">
+    <children>
+        <BorderPane prefHeight="720.0" prefWidth="1280.0">
+            <top>
+                <AnchorPane prefHeight="65.0" prefWidth="1282.0" style="-fx-background-color: #172449;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane prefHeight="25.0" prefWidth="1280.0" />
+                        <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <ImageView fx:id="btn_exit_home" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../images/exit.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="2.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="935.0" layoutY="25.0" prefHeight="58.0" prefWidth="345.0">
+                            <children>
+                                <JFXButton fx:id="btn_cart" prefHeight="28.0" prefWidth="28.0" ripplerFill="#ffaa60">
+                                    <graphic>
+                                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../images/cart_white.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </HBox>
+                  <HBox layoutY="13.0" prefHeight="52.0" prefWidth="325.0" AnchorPane.topAnchor="13.0">
+                     <children>
+                        <JFXButton fx:id="btn_menu" alignment="BASELINE_LEFT" prefHeight="52.0" prefWidth="131.0" text=" Menu" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/menu.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="32.0" />
+                           </padding>
+                        </JFXButton>
+                        <ImageView fitHeight="59.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/CrunchyDinner.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                    </children>
+                </AnchorPane>
+            </top>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="617.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox prefHeight="638.0" prefWidth="1280.0">
+                            <children>
+                            <AnchorPane fx:id="side_menu" prefHeight="638.0" prefWidth="205.0" style="-fx-background-color: WHITE;">
+                           <children>
+                              <VBox prefHeight="638.0" prefWidth="205.0">
+                                 <children>
+                                    <JFXButton fx:id="btn_best_selling" alignment="BASELINE_LEFT" prefHeight="52.0" prefWidth="212.0" styleClass="sideItem" text="Best Selling">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/BestSelling.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets top="32.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="32.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="btn_main_dish" alignment="BASELINE_LEFT" prefHeight="52.0" prefWidth="212.0" styleClass="sideItem" text="Main Dishes">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/baseline_fastfood_black_18dp.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="32.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="btn_foods" alignment="BASELINE_LEFT" prefHeight="52.0" prefWidth="212.0" styleClass="sideItem" text="Foods">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/baseline_lunch_dining_black_18dp.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="32.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="btn_drinks" alignment="BASELINE_LEFT" prefHeight="52.0" prefWidth="212.0" styleClass="sideItem" text="Drinks">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images/baseline_local_cafe_black_18dp.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="32.0" />
+                                       </padding>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                                <ScrollPane fx:id="scroll_home" prefHeight="638.0" prefWidth="1075.0" stylesheets="@../style.css">
+                                    <content>
+                                        <GridPane fx:id="grid_home" prefHeight="0.0" prefWidth="44.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                        </GridPane>
+                                    </content>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </ScrollPane>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

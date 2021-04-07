@@ -1,0 +1,39 @@
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.rounded-only{
+    -fx-background-radius: 5;
+}
+
+.rounded{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+.button-orange{
+    -fx-background-color: linear-gradient(to left top, #e33d63, #fe872d);
+    -fx-background-radius: 5;
+
+}
+.button-remove{
+    -fx-background-color: linear-gradient(to left top,#f86063,#ed798a)
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+.dot {
+  -fx-background-color:  #172449;
+  -fx-background-radius: 50;
+
+}
+.sideItem:hover{
+    -fx-background-color: #fee7d6;
+    -fx-border-color: #172449;
+    -fx-border-width: 0px 0px 0px 2px;
+}
+.sideItemSelected{
+    -fx-background-color: #fee7d6;
+    -fx-border-color: #172449;
+    -fx-border-width: 0px 0px 0px 2px;
+}
